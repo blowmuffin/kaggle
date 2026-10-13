@@ -1,0 +1,17 @@
+{
+ "id": "ayushkasare/dataverse-sa2",
+ "title": "dataverse-sa2",
+ "code_file": "dataverse-sa2.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "competition_sources": [
+  "dataverse-detecting-emotions-from-hindi-speech"
+ ],
+ "dataset_sources": [],
+ "kernel_sources": [],
+ "model_sources": [],
+ "machine_shape": "NvidiaTeslaT4"
+}

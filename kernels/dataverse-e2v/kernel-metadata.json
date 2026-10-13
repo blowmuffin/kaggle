@@ -1,0 +1,16 @@
+{
+ "id": "ayushkasare/dataverse-e2v",
+ "title": "dataverse-e2v",
+ "code_file": "dataverse-e2v.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": false,
+ "enable_internet": true,
+ "competition_sources": [
+  "dataverse-detecting-emotions-from-hindi-speech"
+ ],
+ "dataset_sources": [],
+ "kernel_sources": [],
+ "model_sources": []
+}

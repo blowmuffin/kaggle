@@ -1,0 +1,19 @@
+{
+ "id": "ayushkasare/dataverse-qa7b",
+ "title": "dataverse-qa7b",
+ "code_file": "dataverse-qa7b.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "competition_sources": [
+  "dataverse-detecting-emotions-from-hindi-speech"
+ ],
+ "dataset_sources": [],
+ "kernel_sources": [],
+ "model_sources": [
+  "qwen-lm/qwen2-audio/transformers/7b-instruct/1"
+ ],
+ "machine_shape": "NvidiaTeslaT4"
+}

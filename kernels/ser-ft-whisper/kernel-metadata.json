@@ -1,0 +1,16 @@
+{
+ "id": "ayushkasare/dataverse-ser-ft-whisper",
+ "title": "dataverse-ser-ft-whisper",
+ "code_file": "ser-ft-whisper.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "competition_sources": [
+  "dataverse-detecting-emotions-from-hindi-speech"
+ ],
+ "dataset_sources": [],
+ "kernel_sources": [],
+ "machine_shape": "NvidiaTeslaT4"
+}
