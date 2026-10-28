@@ -1,0 +1,45 @@
+0 1035 1s tokens 88
+200 1035 9s tokens 114
+Traceback (most recent call last):
+  File "D:\kaggle\dataverse\src\dasheng_extract.py", line 22, in <module>
+    last = model(x).hidden_states[0]
+           ~~~~~^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\kaggle\hf_cache\modules\transformers_modules\mispeech\dasheng-1.2B\e830b3b0014affc8447a9c15d18bb196a747137f\modeling_dasheng.py", line 506, in forward
+    last_hidden_states = self.encoder(x)
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\kaggle\hf_cache\modules\transformers_modules\mispeech\dasheng-1.2B\e830b3b0014affc8447a9c15d18bb196a747137f\modeling_dasheng.py", line 390, in forward
+    x = self.forward_features(x)
+  File "D:\kaggle\hf_cache\modules\transformers_modules\mispeech\dasheng-1.2B\e830b3b0014affc8447a9c15d18bb196a747137f\modeling_dasheng.py", line 354, in forward_features
+    x = self.patch_embed(x)
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\kaggle\hf_cache\modules\transformers_modules\mispeech\dasheng-1.2B\e830b3b0014affc8447a9c15d18bb196a747137f\modeling_dasheng.py", line 159, in forward
+    x = self.proj(x)
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\conv.py", line 565, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\conv.py", line 560, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Input type (float) and bias type (struct c10::Half) should be the same

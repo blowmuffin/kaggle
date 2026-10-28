@@ -161,7 +161,7 @@ Rule for every spike: repeated CV over the existing splits (seeds 42/7/11, `oof/
   like C1. Extraction 768 s local (feats/whisper_aug.npy); S3 member training ~25 min CPU per split (5× rows).
 - **S3b result:** gains −0.0048/+0.0084/+0.0049, mean +0.0029, folds up 1/5/3 → **✗ rejected.** Loop-pad member alone 0.834–0.871.
 - Spike verdict (06 Oct): S1, S2, S3, S3b all fail the gate; augmentation (S3) is the only consistently positive one.
-- **S3+C1 (PRE-REGISTERED after seeing S3 and C1):** whisper member = whisper_aug_L24L32 (S3) AND w2vbert member =
+- **S3+C1 (PRE-REGISTERED after seeing S3 and C1, user-approved):** whisper member = whisper_aug_L24L32 (S3) AND w2vbert member =
   w2vbert_L10L16 (C1), rest of A′ unchanged. Same rule: mean gain ≥ +0.005 AND > 0 on every split (seeds 42/7/11).
   Caveat: second look at the same splits; C3 showed C1+C2 was not additive.
 - **S3+C1 result:** gains +0.0070/+0.0095/+0.0014, mean **+0.0060**, folds up 5/5/2 → **✓ ADOPTED** (passes the pre-registered rule;
@@ -170,7 +170,7 @@ Rule for every spike: repeated CV over the existing splits (seeds 42/7/11, `oof/
   Class counts 52/53/53/51. Only **2 test preds change vs A′**: Id 235 happy→neutral, Id 883 angry→happy.
   **Submitted 2026-10-06 ~02:20 IST: public 0.94230 (= A′)** → the 2 changed clips are private, or net zero on public.
 
-## Research round R1–R3 (PRE-REGISTERED 2026-10-06; base is now **A″** = A′ with whisper_aug_L24L32 + w2vbert_L10L16)
+## Research round R1–R3 (PRE-REGISTERED 2026-10-06, user-approved; base is now **A″** = A′ with whisper_aug_L24L32 + w2vbert_L10L16)
 Research (web, 06 Oct): X-ARES / ICME-2025 encoder challenge → Dasheng-1.2B strongest general audio encoder (incl. emotion);
 VoxEmo (2026) → Qwen2-Audio-7B best open speech LLM for SER, "+A" self-generated acoustic-caption prompt helps on non-English
 acted data; Step-Audio-2-mini (Apache-2.0) best open model on paralinguistics (emotion 82%). Rejected: BhavVani (form-gated,
@@ -188,7 +188,7 @@ Rule for all: repeated CV seeds 42/7/11 vs A″; adopt if mean gain ≥ +0.005 A
   needed `pip install einops torchaudio==2.11.0 --no-deps`). Another frozen audio encoder redundant with whisper in the blend.
 - **R2, R3:** kernels ready + smoke-tested (kernels/dataverse-sa2, kernels/dataverse-qa7b), NOT pushed — run 10 Oct.
 
-## Local round L1–L5 (PRE-REGISTERED 2026-10-06 ~14:20 IST; base A″; same repeated-CV rule)
+## Local round L1–L5 (PRE-REGISTERED 2026-10-06 ~14:20 IST, user-approved; base A″; same repeated-CV rule)
 Research: attentive pooling on frozen Whisper beats mean pooling on small SER sets (+0.4…+2.3 UA, arXiv 2602.06000); emotion
 cues are localized (≈15% of frames carry 80%, arXiv 2506.15754); confident learning finds a few % label errors in common datasets;
 augmentation effects are dataset-specific (PMC9415521).
@@ -221,7 +221,7 @@ augmentation effects are dataset-specific (PMC9415521).
   pitch shift moves L32 most, cos 0.975); blend gains vs A″ −0.0035/−0.0010/+0.0001, mean −0.0015 → **✗ rejected.**
 - **Local round verdict (06 Oct):** L1 ✗ (−0.0043), L2 ✗ (−0.0015), L3 ✗ but closest (+0.0045, >0 on all splits, best single
   member), L4 ✗ (−0.0007), L5 ✗ (−0.0020). A″ stays. New files: feats/w2vbert_aug.npy, whisper_frames(_off).npy, whisper_aug2.npy.
-- **L3a / L3b (PRE-REGISTERED after seeing L3; both vs A″, same rule):**
+- **L3a / L3b (PRE-REGISTERED after seeing L3, user-approved; both vs A″, same rule):**
   L3a: whisper role = mean(whisper_aug_L24L32, whisper_attn) — the head shares the whisper slot; rest of A″ unchanged.
   L3b: attentive head (same architecture/training as L3) trained on frames of the original + 4 S3 views (noise 20/30 dB,
   0.25/0.5 s lead silence; same RNG as whisper_aug.py), one uniformly random version per clip per step, 30 epochs;
@@ -230,7 +230,7 @@ augmentation effects are dataset-specific (PMC9415521).
 - **L3a result:** gains vs A″ −0.0084/−0.0021/+0.0014, mean −0.0030, folds up 1/1/3 → **✗ rejected.** Halving whisper_aug's
   weight costs more than the head adds: the head is useful only as an extra voice (L3, +0.0045), not as a replacement.
 
-## Replication round P1–P3 (PRE-REGISTERED 2026-10-08 ~19:05 IST, replicating similar-competition solutions; vs A″, same rule)
+## Replication round P1–P3 (PRE-REGISTERED 2026-10-08 ~19:05 IST, user asked to replicate similar-competition solutions; vs A″, same rule)
 Research: no public competition with this exact data/task (no prior DataVerse edition found). Closest: Interspeech 2025
 naturalistic SER challenge (SAILER top-3, arXiv 2505.22133: whisper-large-v3 > WavLM, +text +0.013–0.019, ensembling +0.020,
 audio mixing + annotation dropout +0.005; NTUA 1st: DeepSER cross-modal fusion + meta-classifier), Odyssey 2024 (1st: focal loss
@@ -260,7 +260,7 @@ pooling), Urdu low-resource SSL adaptation (cross-lingual, needs large unlabelle
   file). Splits disagree on only 2 test clips: Id 235 (42 neutral, 7/11 happy; avg neu 0.45 vs hap 0.44 → neutral; A′ had happy)
   and Id 449 (avg sad 0.46 → sad, also twin-locked to sad). Test predictions are stable across splits; nothing to submit.
 
-## 10-Oct Kaggle round K1–K4 (PRE-REGISTERED 2026-10-10 ~02:20 IST). Base for all 10-Oct candidates = **A‴**
+## 10-Oct Kaggle round K1–K4 (PRE-REGISTERED 2026-10-10 ~02:20 IST, user-approved). Base for all 10-Oct candidates = **A‴**
 (A″ + P3 head as 0.2 extra). New members enter as a nested extra: audio'' = 0.8·audio' + 0.2·member (audio' = A‴ audio),
 same weight as before. S5 / R2 / R3 / omni-zs2 keep their registered member definitions but are now judged vs A‴ the same way.
 Rule unchanged: repeated CV seeds 42/7/11, adopt if mean gain ≥ +0.005 AND > 0 on every split.
@@ -296,7 +296,7 @@ Research (08–10 Oct): Gemma 4 E2B/E4B (Apache-2.0, Kaggle `google/gemma-4`) ta
   Gemma-4 USM encoder 0.85–0.86, Qwen3-ASR AuT 0.85, Omni+transcript last-token hidden 0.85 — all redundant with the blend.
   GPU used ≈ 3 h of 30. **A‴ (= A″ file, subs/v5_aug_c1_lock.csv) stays the final best-CV candidate.**
 
-## Audit + fixes F1–F3 (PRE-REGISTERED 2026-10-10 ~13:15 IST, audit of flaws first; base A‴, same repeated-CV rule)
+## Audit + fixes F1–F3 (PRE-REGISTERED 2026-10-10 ~13:15 IST, user asked to audit flaws first; base A‴, same repeated-CV rule)
 Audit (measured, seed-42 OOF): (a) **calibration** — LR members are calibrated (|conf−acc| ≤ 0.06) but the P3 head is badly
 under-confident (conf 0.708 vs acc 0.910): in a probability average it acts with far less than its nominal 0.2 weight; GOAL.md
 asked for per-member calibration before averaging and it was never done. (b) **learning curve** whisper L24+L32 probe: train on
@@ -346,6 +346,6 @@ Source: reports/Hindi SER competition winning ideas.md (research round 12 Oct). 
   G1 hard majority vote −0.0048/+0.0013/−0.0014, mean −0.0016, 2 test flips ✗ · G2 shrinkage-LDA heads (members 0.88/0.82 vs LR)
   −0.0204/−0.0093/−0.0001, mean −0.0099 ✗ · G3 transductive scaling ±0.0000 (0 test flips — scaling stats barely move) ✗ ·
   G4 learned 33-layer weights (member 0.82–0.83) −0.0157/+0.0001/+0.0009, mean −0.0049 ✗. **All rejected; A‴ unchanged.**
-- **Literature research round (12 Oct, multi-source search with adversarial claim verification):**
+- **Workflow deep-research round (12 Oct, Haiku search/verify + Opus synthesis, 100 agents; research_notes/.../workflow_verified_claims.json):**
   8 claims survived / 17 refuted; none on Hindi or small data. Its two ideas are already covered: speaker-adversarial head (≈ rejected
   speaker normalisation; needs speaker labels) and early audio-text attention fusion (= adopted P3). Nothing new to test.

@@ -1,0 +1,15 @@
+12:53 qa7b KernelWorkerStatus.COMPLETE
+dataverse-qa7b.log qa7b_cap.csv qa7b_h.npy qa7b_lp.npy 
+,{"stream_name":"stdout","time":4719.76770673,"data":"prompt 0 zero-shot macro-F1 on 826 train clips: 0.4533\n"}
+,{"stream_name":"stdout","time":4719.769880323,"data":"prompt 1 zero-shot macro-F1 on 826 train clips: 0.3441\n"}
+,{"stream_name":"stdout","time":4719.771881855,"data":"prompt 2 zero-shot macro-F1 on 826 train clips: 0.3108\n"}
+,{"stream_name":"stdout","time":4719.771902642,"data":"processed 1035/1035, total 4719s\n"}
+seed 11 qa7b_h                   C=0.003  0.6712
+seed 11 qa7b_lp                  C=0.1    0.5789
+seed 11 qa7b_lp3                 C=0.1    0.5547
+seed 42 qa7b_h                   C=0.003  0.6845
+seed 42 qa7b_lp                  C=0.1    0.5745
+seed 42 qa7b_lp3                 C=0.1    0.5569
+seed 7 qa7b_h                   C=0.003  0.6921
+seed 7 qa7b_lp                  C=0.1    0.5829
+seed 7 qa7b_lp3                 C=0.1    0.5710

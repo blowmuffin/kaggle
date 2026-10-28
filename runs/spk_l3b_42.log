@@ -1,0 +1,8 @@
+D:\kaggle\dataverse\src\attn_pool.py:41: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  return torch.from_numpy(np.asarray(Fr[o[i]:o[i + 1]]).reshape(o[i + 1] - o[i], -1)).cuda()
+seed 42 fold 0: F1 0.9408
+seed 42 fold 1: F1 0.9085
+seed 42 fold 2: F1 0.9149
+seed 42 fold 3: F1 0.8929
+seed 42 fold 4: F1 0.9092
+seed 42 whisper_attn_aug 0.9130

@@ -1,0 +1,6 @@
+seed 7 fold 0: F1 0.8966
+seed 7 fold 1: F1 0.9240
+seed 7 fold 2: F1 0.8982
+seed 7 fold 3: F1 0.9155
+seed 7 fold 4: F1 0.8847
+seed 7 whisper_attn 0.9041

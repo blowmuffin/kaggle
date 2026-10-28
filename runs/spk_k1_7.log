@@ -1,0 +1,3 @@
+seed 7 gemma4_h                 C=0.003  0.8108
+seed 7 gemma4_lp                C=0.3    0.7740
+seed 7 gemma4_enc               C=0.03   0.8511

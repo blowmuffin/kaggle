@@ -1,0 +1,22 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\librosa\effects.py:448: FutureWarning: The `hop_length` parameter is deprecated as of 1.0 and will be removed in 1.1. It is unused in the current implementation.
+  stft_stretch = core.phase_vocoder(
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\librosa\effects.py:448: FutureWarning: The `n_fft` parameter is deprecated as of 1.0 and will be removed in 1.1. It is unused in the current implementation.
+  stft_stretch = core.phase_vocoder(
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\numba\np\ufunc\dufunc.py:290: RuntimeWarning: invalid value encountered in cast
+  return super().__call__(*args, **kws)
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\librosa\effects.py:448: FutureWarning: The `hop_length` parameter is deprecated as of 1.0 and will be removed in 1.1. It is unused in the current implementation.
+  stft_stretch = core.phase_vocoder(
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\librosa\effects.py:448: FutureWarning: The `n_fft` parameter is deprecated as of 1.0 and will be removed in 1.1. It is unused in the current implementation.
+  stft_stretch = core.phase_vocoder(
+C:\Users\Baabli\AppData\Roaming\Python\Python313\site-packages\numba\np\ufunc\dufunc.py:290: RuntimeWarning: invalid value encountered in cast
+  return super().__call__(*args, **kws)
+0 1035 10s
+200 1035 172s
+400 1035 395s
+600 1035 625s
+800 1035 852s
+1000 1035 992s
+done aug2 (1035, 4, 2, 2560) 1013s

@@ -1,0 +1,4 @@
+seed 42 omni2_h                  C=0.003  0.8356
+seed 42 omni2_lp                 C=0.3    0.7367
+seed 42 omni_th                  C=0.003  0.8504
+seed 42 omni_tlp                 C=0.3    0.7539

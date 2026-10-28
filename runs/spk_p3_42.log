@@ -1,0 +1,6 @@
+seed 42 fold 0: F1 0.9465
+seed 42 fold 1: F1 0.9207
+seed 42 fold 2: F1 0.8961
+seed 42 fold 3: F1 0.8800
+seed 42 fold 4: F1 0.9114
+seed 42 whisper_attn_text 0.9108

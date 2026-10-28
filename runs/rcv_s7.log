@@ -1,0 +1,7 @@
+seed 7 whisper_L24L32     C=0.1    0.8951
+seed 7 w2vbert_L16        C=0.03   0.8036
+seed 7 w2vbert_L10L16     C=0.01   0.8160
+seed 7 omni_h             C=0.01   0.8331
+seed 7 omni_lp            C=0.3    0.7391
+seed 7 whisperv2_L24L32   C=0.1    0.9042
+seed 7 text_e5 0.7180 | DONE

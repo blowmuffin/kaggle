@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+prefix model.audio_tower. | tensors 393 | missing [] | unexpected []
+feature keys {'input_features': (1, 128, 3000), 'attention_mask': (1, 3000)} | layers 24 hook layer 18
+0 1035 1s tokens 46
+200 1035 17s tokens 60
+400 1035 29s tokens 24
+600 1035 39s tokens 70
+800 1035 50s tokens 43
+1000 1035 60s tokens 45
+done (1035, 2, 2048) 61s

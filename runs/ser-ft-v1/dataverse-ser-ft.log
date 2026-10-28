@@ -1,0 +1,82 @@
+[{"stream_name":"stdout","time":8.666720837,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 1.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.741458267,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 93.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.784639243,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 21.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.83758656,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 88.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":27.779357007,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":27.779383821,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.779389019,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":137.877476851,"data":"data /kaggle/input/competitions/dataverse-detecting-emotions-from-hindi-speech/SRCASW-BhavVaani train=826 test=209 gpus=2 load 136s\n"}
+,{"stream_name":"stderr","time":195.298473987,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":195.299776638,"data":"  File \"/kaggle/src/script.py\", line 151, in safe\n"}
+,{"stream_name":"stderr","time":195.299801486,"data":"    run(key, dev, deadline)\n"}
+,{"stream_name":"stderr","time":195.29980749,"data":"    ~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":195.299812911,"data":"  File \"/kaggle/src/script.py\", line 109, in run\n"}
+,{"stream_name":"stderr","time":195.299818242,"data":"    model = Net(name).to(dev)\n"}
+,{"stream_name":"stderr","time":195.299822569,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":195.299827959,"data":"    return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":195.299832393,"data":"           ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":195.299836905,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":195.299841883,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":195.299846348,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":195.299851006,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":195.299855504,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":195.299859622,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":195.2998637,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":195.299868074,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":195.299872073,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":195.299876299,"data":"  [Previous line repeated 2 more times]\n"}
+,{"stream_name":"stderr","time":195.299886106,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n"}
+,{"stream_name":"stderr","time":195.29991953,"data":"    param_applied = fn(param)\n"}
+,{"stream_name":"stderr","time":195.299924217,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n"}
+,{"stream_name":"stderr","time":195.299928416,"data":"    raise NotImplementedError(\n"}
+,{"stream_name":"stderr","time":195.299931699,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":195.299935472,"data":"    ) from None\n"}
+,{"stream_name":"stderr","time":195.299942585,"data":"NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n"}
+,{"stream_name":"stderr","time":204.398023691,"data":"/kaggle/src/script.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":204.398065301,"data":"  scaler.step(opt); scaler.update(); sch.step()\n"}
+,{"stream_name":"stdout","time":360.646908869,"data":"[w2vbert] fold 0 ep 1/10 loss 1.434 valF1 0.3113 vloss 1.264 169s\n"}
+,{"stream_name":"stdout","time":480.905967068,"data":"[w2vbert] fold 0 ep 2/10 loss 0.948 valF1 0.7157 vloss 0.750 120s\n"}
+,{"stream_name":"stdout","time":589.786130606,"data":"[w2vbert] fold 0 ep 3/10 loss 0.588 valF1 0.6815 vloss 1.030 109s\n"}
+,{"stream_name":"stdout","time":695.012657707,"data":"[w2vbert] fold 0 ep 4/10 loss 0.379 valF1 0.8427 vloss 0.502 105s\n"}
+,{"stream_name":"stdout","time":792.854214206,"data":"[w2vbert] fold 0 ep 5/10 loss 0.268 valF1 0.7800 vloss 0.673 98s\n"}
+,{"stream_name":"stdout","time":896.811978779,"data":"[w2vbert] fold 0 ep 6/10 loss 0.241 valF1 0.8803 vloss 0.412 104s\n"}
+,{"stream_name":"stdout","time":998.951843551,"data":"[w2vbert] fold 0 ep 7/10 loss 0.213 valF1 0.8809 vloss 0.481 102s\n"}
+,{"stream_name":"stdout","time":1095.003129565,"data":"[w2vbert] fold 0 ep 8/10 loss 0.210 valF1 0.8346 vloss 0.529 96s\n"}
+,{"stream_name":"stdout","time":1189.453028261,"data":"[w2vbert] fold 0 ep 9/10 loss 0.209 valF1 0.8409 vloss 0.554 94s\n"}
+,{"stream_name":"stdout","time":1281.097051198,"data":"[w2vbert] fold 0 ep 10/10 loss 0.209 valF1 0.8409 vloss 0.556 92s\n"}
+,{"stream_name":"stdout","time":1281.186071496,"data":"[w2vbert] FOLD 0 best 0.8809 | OOF so far 0.8809 | 1279s\n"}
+,{"stream_name":"stderr","time":1281.549611616,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1281.55050903,"data":"  File \"/kaggle/src/script.py\", line 151, in safe\n"}
+,{"stream_name":"stderr","time":1281.550524965,"data":"    run(key, dev, deadline)\n"}
+,{"stream_name":"stderr","time":1281.550530317,"data":"    ~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1281.550534977,"data":"  File \"/kaggle/src/script.py\", line 109, in run\n"}
+,{"stream_name":"stderr","time":1281.550539447,"data":"    model = Net(name).to(dev)\n"}
+,{"stream_name":"stderr","time":1281.550543668,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":1281.550548253,"data":"    return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":1281.550560149,"data":"           ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1281.550563067,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":1281.550566025,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":1281.550579035,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":1281.550581453,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":1281.550583753,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":1281.550585843,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":1281.550588022,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":1281.55059027,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":1281.550592365,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":1281.550594476,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n"}
+,{"stream_name":"stderr","time":1281.550596792,"data":"    param_applied = fn(param)\n"}
+,{"stream_name":"stderr","time":1281.55059892,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n"}
+,{"stream_name":"stderr","time":1281.55060119,"data":"    raise NotImplementedError(\n"}
+,{"stream_name":"stderr","time":1281.550603297,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":1281.550605808,"data":"    ) from None\n"}
+,{"stream_name":"stderr","time":1281.550608357,"data":"NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n"}
+,{"stream_name":"stdout","time":1281.564943167,"data":"w2vbert: OOF macro-F1 0.8809 on 166 rows\n"}
+,{"stream_name":"stdout","time":1281.617710636,"data":"{'sad': 58, 'neutral': 55, 'angry': 54, 'happy': 42}\n"}
+,{"stream_name":"stdout","time":1281.617734395,"data":"total 1280s\n"}
+,{"stream_name":"stderr","time":1293.729826806,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1293.729861994,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1294.123637529,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1294.123657066,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1295.154621463,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1295.723709999,"data":"[NbConvertApp] Writing 339804 bytes to __results__.html\n"}
+]

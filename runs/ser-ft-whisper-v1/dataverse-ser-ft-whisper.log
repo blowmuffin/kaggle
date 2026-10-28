@@ -1,0 +1,70 @@
+[{"stream_name":"stdout","time":4.131895672,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 1.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":5.127255963,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 73.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":5.155880977,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 25.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":5.206681184,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 76.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":20.140978792,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":20.141014419,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":20.14101869,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":98.931611606,"data":"data /kaggle/input/competitions/dataverse-detecting-emotions-from-hindi-speech/SRCASW-BhavVaani train=826 test=209 gpus=2 load 98s\n"}
+,{"stream_name":"stderr","time":120.660348681,"data":"Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']\n"}
+,{"stream_name":"stderr","time":120.660425003,"data":"You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"}
+,{"stream_name":"stderr","time":123.660794684,"data":"Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']\n"}
+,{"stream_name":"stderr","time":123.660828899,"data":"You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"}
+,{"stream_name":"stderr","time":124.462760711,"data":"/kaggle/src/script.py:140: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":124.462801731,"data":"  scaler.step(opt); scaler.update(); sch.step()\n"}
+,{"stream_name":"stdout","time":167.669059725,"data":"[whisper cuda:1] fold 1 ep 1/5 loss 1.579 valF1 0.1034 vloss 1.399 46s\n"}
+,{"stream_name":"stdout","time":168.323246087,"data":"[whisper cuda:0] fold 0 ep 1/5 loss 1.610 valF1 0.1029 vloss 1.432 44s\n"}
+,{"stream_name":"stdout","time":209.260681066,"data":"[whisper cuda:1] fold 1 ep 2/5 loss 1.421 valF1 0.0995 vloss 1.410 42s\n"}
+,{"stream_name":"stdout","time":214.940004236,"data":"[whisper cuda:0] fold 0 ep 2/5 loss 1.439 valF1 0.1082 vloss 1.424 47s\n"}
+,{"stream_name":"stdout","time":256.867707134,"data":"[whisper cuda:1] fold 1 ep 3/5 loss 1.401 valF1 0.2657 vloss 1.371 48s\n"}
+,{"stream_name":"stdout","time":264.360938641,"data":"[whisper cuda:0] fold 0 ep 3/5 loss 1.383 valF1 0.1953 vloss 1.391 49s\n"}
+,{"stream_name":"stdout","time":303.759598364,"data":"[whisper cuda:1] fold 1 ep 4/5 loss 1.322 valF1 0.5564 vloss 1.207 47s\n"}
+,{"stream_name":"stdout","time":312.69911285,"data":"[whisper cuda:0] fold 0 ep 4/5 loss 1.211 valF1 0.5214 vloss 1.221 48s\n"}
+,{"stream_name":"stdout","time":351.311340091,"data":"[whisper cuda:1] fold 1 ep 5/5 loss 1.191 valF1 0.5607 vloss 1.150 48s\n"}
+,{"stream_name":"stdout","time":351.313886805,"data":"[whisper] FOLD 1 best 0.5607 | OOF so far 0.5607 folds [1] | 351s\n"}
+,{"stream_name":"stderr","time":352.874359089,"data":"Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']\n"}
+,{"stream_name":"stderr","time":352.874396256,"data":"You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"}
+,{"stream_name":"stderr","time":353.870411259,"data":"/kaggle/src/script.py:140: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":353.870447588,"data":"  scaler.step(opt); scaler.update(); sch.step()\n"}
+,{"stream_name":"stdout","time":361.51168969,"data":"[whisper cuda:0] fold 0 ep 5/5 loss 0.905 valF1 0.6338 vloss 1.037 49s\n"}
+,{"stream_name":"stdout","time":361.51570252,"data":"[whisper] FOLD 0 best 0.6338 | OOF so far 0.5978 folds [0, 1] | 361s\n"}
+,{"stream_name":"stderr","time":361.675478061,"data":"'(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), '(Request ID: ba5dd9df-727a-42aa-aad7-d00d06fd6b18)')' thrown while requesting HEAD https://huggingface.co/openai/whisper-large-v3/resolve/main/config.json\n"}
+,{"stream_name":"stderr","time":361.675525327,"data":"WARNING:huggingface_hub.utils._http:'(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), '(Request ID: ba5dd9df-727a-42aa-aad7-d00d06fd6b18)')' thrown while requesting HEAD https://huggingface.co/openai/whisper-large-v3/resolve/main/config.json\n"}
+,{"stream_name":"stderr","time":361.67851087,"data":"Retrying in 1s [Retry 1/5].\n"}
+,{"stream_name":"stderr","time":361.678533246,"data":"WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].\n"}
+,{"stream_name":"stderr","time":364.256629995,"data":"Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']\n"}
+,{"stream_name":"stderr","time":364.256683983,"data":"You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"}
+,{"stream_name":"stderr","time":365.372261066,"data":"/kaggle/src/script.py:140: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":365.372299867,"data":"  scaler.step(opt); scaler.update(); sch.step()\n"}
+,{"stream_name":"stdout","time":400.339433316,"data":"[whisper cuda:1] fold 2 ep 1/5 loss 1.517 valF1 0.1019 vloss 1.393 47s\n"}
+,{"stream_name":"stdout","time":413.038824269,"data":"[whisper cuda:0] fold 3 ep 1/5 loss 1.551 valF1 0.0995 vloss 1.440 48s\n"}
+,{"stream_name":"stdout","time":447.557879786,"data":"[whisper cuda:1] fold 2 ep 2/5 loss 1.345 valF1 0.3580 vloss 1.087 47s\n"}
+,{"stream_name":"stdout","time":461.314464178,"data":"[whisper cuda:0] fold 3 ep 2/5 loss 1.403 valF1 0.1034 vloss 1.384 48s\n"}
+,{"stream_name":"stdout","time":494.735729734,"data":"[whisper cuda:1] fold 2 ep 3/5 loss 1.112 valF1 0.5057 vloss 0.944 47s\n"}
+,{"stream_name":"stdout","time":510.019828352,"data":"[whisper cuda:0] fold 3 ep 3/5 loss 1.377 valF1 0.2307 vloss 1.432 49s\n"}
+,{"stream_name":"stdout","time":538.553743389,"data":"[whisper cuda:1] fold 2 ep 4/5 loss 0.979 valF1 0.4988 vloss 0.887 44s\n"}
+,{"stream_name":"stdout","time":558.529067728,"data":"[whisper cuda:0] fold 3 ep 4/5 loss 1.305 valF1 0.4137 vloss 1.242 49s\n"}
+,{"stream_name":"stdout","time":585.926117625,"data":"[whisper cuda:1] fold 2 ep 5/5 loss 0.885 valF1 0.5868 vloss 0.895 47s\n"}
+,{"stream_name":"stdout","time":585.928916303,"data":"[whisper] FOLD 2 best 0.5868 | OOF so far 0.5933 folds [0, 1, 2] | 585s\n"}
+,{"stream_name":"stderr","time":587.01125339,"data":"Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']\n"}
+,{"stream_name":"stderr","time":587.011298534,"data":"You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"}
+,{"stream_name":"stderr","time":587.914495698,"data":"/kaggle/src/script.py:140: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":587.914541906,"data":"  scaler.step(opt); scaler.update(); sch.step()\n"}
+,{"stream_name":"stdout","time":606.828890087,"data":"[whisper cuda:0] fold 3 ep 5/5 loss 1.158 valF1 0.4299 vloss 1.212 48s\n"}
+,{"stream_name":"stdout","time":606.832714798,"data":"[whisper] FOLD 3 best 0.4299 | OOF so far 0.5632 folds [0, 1, 2, 3] | 606s\n"}
+,{"stream_name":"stdout","time":634.317162711,"data":"[whisper cuda:1] fold 4 ep 1/5 loss 1.528 valF1 0.0995 vloss 1.382 47s\n"}
+,{"stream_name":"stdout","time":681.584203194,"data":"[whisper cuda:1] fold 4 ep 2/5 loss 1.367 valF1 0.2947 vloss 1.320 47s\n"}
+,{"stream_name":"stdout","time":728.832428642,"data":"[whisper cuda:1] fold 4 ep 3/5 loss 1.100 valF1 0.4510 vloss 1.188 47s\n"}
+,{"stream_name":"stdout","time":776.066387095,"data":"[whisper cuda:1] fold 4 ep 4/5 loss 1.017 valF1 0.4837 vloss 1.034 47s\n"}
+,{"stream_name":"stdout","time":823.117142942,"data":"[whisper cuda:1] fold 4 ep 5/5 loss 0.935 valF1 0.5060 vloss 1.032 47s\n"}
+,{"stream_name":"stdout","time":823.12001019,"data":"[whisper] FOLD 4 best 0.5060 | OOF so far 0.5515 folds [0, 1, 2, 3, 4] | 822s\n"}
+,{"stream_name":"stdout","time":823.46036159,"data":"whisper: OOF macro-F1 0.5515 on 826 rows, folds [0, 1, 2, 3, 4]\n"}
+,{"stream_name":"stdout","time":823.503753114,"data":"{'sad': 66, 'angry': 54, 'neutral': 49, 'happy': 40}\n"}
+,{"stream_name":"stdout","time":823.503805605,"data":"total 823s\n"}
+,{"stream_name":"stderr","time":831.974473307,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":831.974513766,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":832.239440475,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":832.239477113,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":833.175384112,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":833.744617685,"data":"[NbConvertApp] Writing 340474 bytes to __results__.html\n"}
+]

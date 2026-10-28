@@ -1,0 +1,33 @@
+[{"stream_name":"stdout","time":3.919085694,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 1.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.871004056,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 105.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.8985661799999995,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 26.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.945565086,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 86.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":19.467298329,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":19.467328743,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":19.467334324,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":112.217381945,"data":"\rFetching 16 files:   0%|          | 0/16 [00:00\u003c?, ?it/s]\rFetching 16 files:   6%|▋         | 1/16 [00:00\u003c00:03,  4.09it/s]\rFetching 16 files:  44%|████▍     | 7/16 [01:11\u003c01:36, 10.73s/it]\rFetching 16 files: 100%|██████████| 16/16 [01:12\u003c00:00,  4.50s/it]\n"}
+,{"stream_name":"stderr","time":112.235660243,"data":"`torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":178.715786963,"data":"\rLoading checkpoint shards:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  25%|██▌       | 1/4 [00:09\u003c00:27,  9.06s/it]\rLoading checkpoint shards:  50%|█████     | 2/4 [00:17\u003c00:16,  8.49s/it]\rLoading checkpoint shards:  75%|███████▌  | 3/4 [00:30\u003c00:10, 10.63s/it]\rLoading checkpoint shards: 100%|██████████| 4/4 [00:37\u003c00:00,  9.26s/it]\rLoading checkpoint shards: 100%|██████████| 4/4 [00:37\u003c00:00,  9.37s/it]\n"}
+,{"stream_name":"stdout","time":179.927856581,"data":"model /tmp/hf/models--stepfun-ai--Step-Audio-2-mini/snapshots/e36fdd5d71e0ea22f09dd94bbab9bfc544ca1e36 dtype torch.float16 gpus=2 loaded 179s\n"}
+,{"stream_name":"stdout","time":179.934866338,"data":"label tokens [[524, 10743, 18514, 77818], [6247, 23355, 32847, 56521], [20628, 58694, 59568, 86907], [12421, 30681, 59665, 82114]] | hidden layers [7, 14, 21, 28]\n"}
+,{"stream_name":"stdout","time":183.877694392,"data":"0 clips 183s | audio tokens 43 | mass on 4 labels per prompt [0.76 0.82]\n"}
+,{"stream_name":"stdout","time":213.793698055,"data":"100 clips 213s | audio tokens 65 | mass on 4 labels per prompt [0.84 0.95]\n"}
+,{"stream_name":"stdout","time":243.568133726,"data":"200 clips 243s | audio tokens 32 | mass on 4 labels per prompt [0.82 0.84]\n"}
+,{"stream_name":"stdout","time":273.596616425,"data":"300 clips 273s | audio tokens 34 | mass on 4 labels per prompt [0.71 0.82]\n"}
+,{"stream_name":"stdout","time":303.640055584,"data":"400 clips 303s | audio tokens 37 | mass on 4 labels per prompt [0.77 0.88]\n"}
+,{"stream_name":"stdout","time":333.434259118,"data":"500 clips 333s | audio tokens 76 | mass on 4 labels per prompt [0.98 0.87]\n"}
+,{"stream_name":"stdout","time":363.862564515,"data":"600 clips 363s | audio tokens 45 | mass on 4 labels per prompt [0.93 0.94]\n"}
+,{"stream_name":"stdout","time":395.237750987,"data":"700 clips 395s | audio tokens 28 | mass on 4 labels per prompt [0.88 0.92]\n"}
+,{"stream_name":"stdout","time":425.552052344,"data":"800 clips 425s | audio tokens 59 | mass on 4 labels per prompt [0.59 0.75]\n"}
+,{"stream_name":"stdout","time":455.923722765,"data":"900 clips 455s | audio tokens 19 | mass on 4 labels per prompt [0.89 0.92]\n"}
+,{"stream_name":"stdout","time":485.813173884,"data":"1000 clips 485s | audio tokens 31 | mass on 4 labels per prompt [0.96 0.95]\n"}
+,{"stream_name":"stdout","time":496.004858068,"data":"prompt 0 zero-shot macro-F1 on 826 train clips: 0.4793\n"}
+,{"stream_name":"stdout","time":496.006800151,"data":"prompt 1 zero-shot macro-F1 on 826 train clips: 0.3073\n"}
+,{"stream_name":"stdout","time":496.006812343,"data":"processed 1035/1035, total 495s\n"}
+,{"stream_name":"stderr","time":503.812243477,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":503.812287682,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":504.244529948,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":504.244563406,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":505.107688631,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":505.648429845,"data":"[NbConvertApp] Writing 315429 bytes to __results__.html\n"}
+]

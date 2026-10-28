@@ -1,0 +1,37 @@
+[{"stream_name":"stdout","time":5.129508729,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 1.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.158782454,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 94.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.198114242,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 24.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.253764145,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 82.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":21.048059096,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":21.048096786,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":21.04810291,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":72.325092315,"data":"`torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":72.332916325,"data":"Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}\n"}
+,{"stream_name":"stderr","time":249.339927491,"data":"\rLoading checkpoint shards:   0%|          | 0/5 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  20%|██        | 1/5 [00:58\u003c03:53, 58.38s/it]\rLoading checkpoint shards:  40%|████      | 2/5 [01:44\u003c02:32, 50.95s/it]\rLoading checkpoint shards:  60%|██████    | 3/5 [02:31\u003c01:38, 49.33s/it]\rLoading checkpoint shards:  80%|████████  | 4/5 [02:55\u003c00:39, 39.44s/it]\rLoading checkpoint shards: 100%|██████████| 5/5 [02:55\u003c00:00, 35.17s/it]\n"}
+,{"stream_name":"stdout","time":249.561140434,"data":"missing keys: 0 []\n"}
+,{"stream_name":"stdout","time":249.589903301,"data":"data /kaggle/input/competitions/dataverse-detecting-emotions-from-hindi-speech/SRCASW-BhavVaani model /kaggle/input/models/qwen-lm/qwen2.5-omni/transformers/7b/1 gpus=2 loaded 249s\n"}
+,{"stream_name":"stderr","time":249.605505791,"data":"The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.\n"}
+,{"stream_name":"stdout","time":250.717760956,"data":"K4 prompt example: 'ting text and speech.\u003c|im_end|\u003e\\n\u003c|im_start|\u003euser\\n\u003c|audio_bos|\u003e\u003c|AUDIO|\u003e\u003c|audio_eos|\u003eTranscript: महा जाओंगी\\nWhat emotion does the speaker express in this Hindi audio? Choose one: angry, happy, neutral, sad. Answer with one word.\u003c|im_end|\u003e\\n\u003c|im_start|\u003eassistant\\n'\n"}
+,{"stream_name":"stdout","time":254.501694332,"data":"0 clips 253s | audio tokens 86 | mass on 4 labels per prompt [0.96 0.94 0.97 0.96]\n"}
+,{"stream_name":"stdout","time":399.759508658,"data":"100 clips 399s | audio tokens 130 | mass on 4 labels per prompt [0.92 0.83 0.89 0.94]\n"}
+,{"stream_name":"stdout","time":549.913807468,"data":"200 clips 549s | audio tokens 64 | mass on 4 labels per prompt [0.95 0.91 0.94 0.94]\n"}
+,{"stream_name":"stdout","time":700.944903518,"data":"300 clips 700s | audio tokens 68 | mass on 4 labels per prompt [0.93 0.84 0.92 0.97]\n"}
+,{"stream_name":"stdout","time":850.432169963,"data":"400 clips 849s | audio tokens 74 | mass on 4 labels per prompt [0.98 0.96 0.98 0.98]\n"}
+,{"stream_name":"stdout","time":998.534799695,"data":"500 clips 997s | audio tokens 152 | mass on 4 labels per prompt [0.97 0.94 0.98 0.97]\n"}
+,{"stream_name":"stdout","time":1146.981454446,"data":"600 clips 1146s | audio tokens 90 | mass on 4 labels per prompt [0.98 0.91 0.97 0.97]\n"}
+,{"stream_name":"stdout","time":1304.555962416,"data":"700 clips 1303s | audio tokens 56 | mass on 4 labels per prompt [0.97 0.93 0.97 0.98]\n"}
+,{"stream_name":"stdout","time":1455.864801224,"data":"800 clips 1455s | audio tokens 117 | mass on 4 labels per prompt [0.93 0.73 0.93 0.91]\n"}
+,{"stream_name":"stdout","time":1606.811430752,"data":"900 clips 1606s | audio tokens 38 | mass on 4 labels per prompt [0.97 0.91 0.97 0.96]\n"}
+,{"stream_name":"stdout","time":1755.836159014,"data":"1000 clips 1755s | audio tokens 62 | mass on 4 labels per prompt [0.97 0.95 0.97 0.96]\n"}
+,{"stream_name":"stdout","time":1806.778657326,"data":"prompt 0 zero-shot macro-F1 on 826 train clips: 0.7082\n"}
+,{"stream_name":"stdout","time":1806.780539698,"data":"prompt 1 zero-shot macro-F1 on 826 train clips: 0.6636\n"}
+,{"stream_name":"stdout","time":1806.782460019,"data":"prompt 2 zero-shot macro-F1 on 826 train clips: 0.6526\n"}
+,{"stream_name":"stdout","time":1806.784425715,"data":"prompt 3 zero-shot macro-F1 on 826 train clips: 0.7240\n"}
+,{"stream_name":"stdout","time":1806.78443948,"data":"processed 1035/1035, total 1806s\n"}
+,{"stream_name":"stderr","time":1814.963046475,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1814.963069862,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1815.21980846,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1815.219842736,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1816.073622722,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1816.599789497,"data":"[NbConvertApp] Writing 337145 bytes to __results__.html\n"}
+]

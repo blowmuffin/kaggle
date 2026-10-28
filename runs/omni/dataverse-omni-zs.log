@@ -1,0 +1,33 @@
+[{"stream_name":"stdout","time":3.654513537,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 1.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.7202802120000005,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 93.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.75417204,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 24.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.803194072,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 80.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":20.859776017,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":20.859807464,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":20.859819055,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":61.572246187,"data":"data /kaggle/input/competitions/dataverse-detecting-emotions-from-hindi-speech/SRCASW-BhavVaani model /kaggle/input/models/qwen-lm/qwen2.5-omni/transformers/7b/1 gpus=2 61s\n"}
+,{"stream_name":"stderr","time":61.586129704,"data":"The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.\n"}
+,{"stream_name":"stderr","time":62.86480657,"data":"`torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":62.871059086,"data":"Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}\n"}
+,{"stream_name":"stderr","time":198.081665968,"data":"\rLoading checkpoint shards:   0%|          | 0/5 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  20%|██        | 1/5 [00:43\u003c02:52, 43.22s/it]\rLoading checkpoint shards:  40%|████      | 2/5 [01:22\u003c02:02, 40.97s/it]\rLoading checkpoint shards:  60%|██████    | 3/5 [01:54\u003c01:13, 36.75s/it]\rLoading checkpoint shards:  80%|████████  | 4/5 [02:14\u003c00:30, 30.01s/it]\rLoading checkpoint shards: 100%|██████████| 5/5 [02:14\u003c00:00, 26.81s/it]\n"}
+,{"stream_name":"stdout","time":198.31000923,"data":"missing keys: 0 [] | loaded 198s\n"}
+,{"stream_name":"stdout","time":200.539969833,"data":"0 clips 200s | mass on 4 labels 0.96\n"}
+,{"stream_name":"stdout","time":240.63391392,"data":"100 clips 240s | mass on 4 labels 0.92\n"}
+,{"stream_name":"stdout","time":281.118412123,"data":"200 clips 280s | mass on 4 labels 0.95\n"}
+,{"stream_name":"stdout","time":321.015149584,"data":"300 clips 320s | mass on 4 labels 0.93\n"}
+,{"stream_name":"stdout","time":361.016415751,"data":"400 clips 360s | mass on 4 labels 0.98\n"}
+,{"stream_name":"stdout","time":401.849859327,"data":"500 clips 401s | mass on 4 labels 0.97\n"}
+,{"stream_name":"stdout","time":442.721804614,"data":"600 clips 442s | mass on 4 labels 0.98\n"}
+,{"stream_name":"stdout","time":484.210665667,"data":"700 clips 484s | mass on 4 labels 0.97\n"}
+,{"stream_name":"stdout","time":526.115873605,"data":"800 clips 525s | mass on 4 labels 0.93\n"}
+,{"stream_name":"stdout","time":568.457057731,"data":"900 clips 568s | mass on 4 labels 0.97\n"}
+,{"stream_name":"stdout","time":609.985495362,"data":"1000 clips 609s | mass on 4 labels 0.97\n"}
+,{"stream_name":"stdout","time":623.934012053,"data":"zero-shot macro-F1 on 826 train clips: 0.7082\n"}
+,{"stream_name":"stdout","time":623.934065326,"data":"processed 1035/1035, total 623s\n"}
+,{"stream_name":"stderr","time":631.223306956,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":631.223332136,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":631.468271131,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":631.468301697,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":632.369928915,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":632.934430551,"data":"[NbConvertApp] Writing 302077 bytes to __results__.html\n"}
+]

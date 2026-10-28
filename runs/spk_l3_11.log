@@ -1,0 +1,6 @@
+seed 11 fold 0: F1 0.8908
+seed 11 fold 1: F1 0.9346
+seed 11 fold 2: F1 0.9281
+seed 11 fold 3: F1 0.9099
+seed 11 fold 4: F1 0.9328
+seed 11 whisper_attn 0.9193

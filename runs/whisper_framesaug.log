@@ -1,0 +1,10 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Some weights of WhisperForAudioClassification were not initialized from the model checkpoint at openai/whisper-large-v3 and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+0 1035 8s
+200 1035 127s
+400 1035 245s
+600 1035 363s
+800 1035 481s
+1000 1035 600s
+done framesaug [(165305, 2, 1280), (165305, 2, 1280), (178378, 2, 1280), (191180, 2, 1280)] 625s

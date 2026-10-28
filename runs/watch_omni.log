@@ -1,0 +1,19 @@
+12:03 omni-zs2 KernelWorkerStatus.COMPLETE
+dataverse-omni-zs2.log omni2_h.npy omni2_lp.npy omni2_th.npy 
+,{"stream_name":"stdout","time":1806.778657326,"data":"prompt 0 zero-shot macro-F1 on 826 train clips: 0.7082\n"}
+,{"stream_name":"stdout","time":1806.780539698,"data":"prompt 1 zero-shot macro-F1 on 826 train clips: 0.6636\n"}
+,{"stream_name":"stdout","time":1806.782460019,"data":"prompt 2 zero-shot macro-F1 on 826 train clips: 0.6526\n"}
+,{"stream_name":"stdout","time":1806.784425715,"data":"prompt 3 zero-shot macro-F1 on 826 train clips: 0.7240\n"}
+,{"stream_name":"stdout","time":1806.78443948,"data":"processed 1035/1035, total 1806s\n"}
+seed 11 omni2_h                  C=0.003  0.8405
+seed 11 omni2_lp                 C=0.3    0.7428
+seed 11 omni_th                  C=0.003  0.8530
+seed 11 omni_tlp                 C=0.3    0.7528
+seed 42 omni2_h                  C=0.003  0.8356
+seed 42 omni2_lp                 C=0.3    0.7367
+seed 42 omni_th                  C=0.003  0.8504
+seed 42 omni_tlp                 C=0.3    0.7539
+seed 7 omni2_h                  C=0.003  0.8478
+seed 7 omni2_lp                 C=0.3    0.7450
+seed 7 omni_th                  C=0.003  0.8518
+seed 7 omni_tlp                 C=0.3    0.7529

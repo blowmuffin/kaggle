@@ -1,0 +1,5 @@
+seed 42 whisper_L24L32_gw        C=0.1    0.8998
+seed 42 w2vbert_L16_gw           C=0.03   0.7847
+seed 42 omni_h_gw                C=0.01   0.8104
+seed 42 omni_lp_gw               C=0.3    0.7327
+seed 42 text_e5_gw               C=30     0.7318

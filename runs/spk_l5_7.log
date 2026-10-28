@@ -1,0 +1,10 @@
+seed 7 fold 0: drop 2/661 | by label [0 0 0 2]
+seed 7 fold 1: drop 0/660 | by label [0 0 0 0]
+seed 7 fold 2: drop 4/660 | by label [0 0 2 2]
+seed 7 fold 3: drop 2/661 | by label [0 0 1 1]
+seed 7 fold 4: drop 4/662 | by label [1 0 1 2]
+seed 7 whisper_aug_L24L32_cl 0.9001
+seed 7 w2vbert_L10L16_cl 0.8090
+seed 7 omni_h_cl 0.8284
+seed 7 omni_lp_cl 0.7451
+seed 7 text_e5_cl 0.7170

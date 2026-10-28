@@ -1,0 +1,8 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+0 1035 1s
+200 1035 50s
+400 1035 119s
+600 1035 153s
+800 1035 188s
+1000 1035 225s
+done (1035, 4, 2, 2048) 231s
